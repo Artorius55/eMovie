@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">eMovie</string>
+
+    <string name="list_fragment_title">Películas</string>
+    <string name="upcoming_label">Próximos estrenos</string>
+    <string name="toprated_label">Tendencia</string>
+    <string name="recomendations_label">Recomendaciones para ti</string>
+
+    <string name="lang_filter">English</string>
+    <string name="date_filter">2008</string>
+
+    <string name="detail_fragment_title">Detalle</string>
+    <string name="detail_fragment_trailer_button">Ver trailer</string>
+</resources>

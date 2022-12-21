@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_4x"
+        android:orientation="vertical"
+        tools:context=".ui.fragments.MoviesFragment">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4x"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6x"
+            android:text="@string/upcoming_label"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_upcoming_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6x"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6x"
+            android:text="@string/toprated_label"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_top_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6x"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6x"
+            android:text="@string/recomendations_label"/>
+
+        <RadioGroup
+            android:id="@+id/rg_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6x"
+            android:orientation="horizontal"
+            android:checkedButton="@id/rb_lang">
+            <android.widget.RadioButton
+                android:id="@+id/rb_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lang_filter"
+                android:layout_marginRight="@dimen/margin_3x"
+                style="@style/SelectButton"/>
+            <android.widget.RadioButton
+                android:id="@+id/rb_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_filter"
+                style="@style/SelectButton"/>
+        </RadioGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6x"/>
+
+    </LinearLayout>
+
+</ScrollView>
